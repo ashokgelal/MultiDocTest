@@ -1,0 +1,420 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2264111B16F16B8D00ABA4CB /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2264111A16F16B8D00ABA4CB /* Cocoa.framework */; };
+		2264112516F16B8D00ABA4CB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2264112316F16B8D00ABA4CB /* InfoPlist.strings */; };
+		2264112716F16B8D00ABA4CB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2264112616F16B8D00ABA4CB /* main.m */; };
+		2264112B16F16B8D00ABA4CB /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 2264112916F16B8D00ABA4CB /* Credits.rtf */; };
+		2264112E16F16B8E00ABA4CB /* Document.m in Sources */ = {isa = PBXBuildFile; fileRef = 2264112D16F16B8E00ABA4CB /* Document.m */; };
+		2264113416F16B8E00ABA4CB /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2264113216F16B8E00ABA4CB /* MainMenu.xib */; };
+		2264113C16F16C7800ABA4CB /* MultiDocWindowController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2264113B16F16C7800ABA4CB /* MultiDocWindowController.mm */; };
+		2264113F16F16E7400ABA4CB /* MultiDocAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2264113E16F16E7400ABA4CB /* MultiDocAppDelegate.m */; };
+		2264114B16F1757100ABA4CB /* MultiDocDocumentController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2264114A16F1757100ABA4CB /* MultiDocDocumentController.m */; };
+		2264114E16F1798500ABA4CB /* DocumentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2264114D16F1798500ABA4CB /* DocumentViewController.m */; };
+		2264115016F18A8600ABA4CB /* Window.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2264114F16F18A8600ABA4CB /* Window.xib */; };
+		2264115216F18C4E00ABA4CB /* View.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2264115116F18C4E00ABA4CB /* View.xib */; };
+		2264115416F1966300ABA4CB /* MyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2264115316F1966300ABA4CB /* MyView.xib */; };
+		2264115816F197AE00ABA4CB /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2264115616F197AD00ABA4CB /* MasterViewController.m */; };
+		2264115916F197AE00ABA4CB /* MasterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2264115716F197AD00ABA4CB /* MasterViewController.xib */; };
+		2264116416F27BE400ABA4CB /* PSMTabBarControl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2264116116F27BD200ABA4CB /* PSMTabBarControl.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2264116016F27BD200ABA4CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2264115A16F27BD100ABA4CB /* PSMTabBarControl.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 53DF68FD067E5B5A0090B5B0;
+			remoteInfo = PSMTabBarControlFramework;
+		};
+		2264116216F27BD200ABA4CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2264115A16F27BD100ABA4CB /* PSMTabBarControl.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8BD4395A1185147D00DB4AC3;
+			remoteInfo = PSMTabBarControlDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2264111716F16B8D00ABA4CB /* MultiDocTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultiDocTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2264111A16F16B8D00ABA4CB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		2264111D16F16B8D00ABA4CB /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		2264111E16F16B8D00ABA4CB /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		2264111F16F16B8D00ABA4CB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2264112216F16B8D00ABA4CB /* MultiDocTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MultiDocTest-Info.plist"; sourceTree = "<group>"; };
+		2264112416F16B8D00ABA4CB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2264112616F16B8D00ABA4CB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2264112816F16B8D00ABA4CB /* MultiDocTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MultiDocTest-Prefix.pch"; sourceTree = "<group>"; };
+		2264112A16F16B8D00ABA4CB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		2264112C16F16B8D00ABA4CB /* Document.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Document.h; sourceTree = "<group>"; };
+		2264112D16F16B8E00ABA4CB /* Document.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Document.m; sourceTree = "<group>"; };
+		2264113316F16B8E00ABA4CB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		2264113A16F16C7800ABA4CB /* MultiDocWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultiDocWindowController.h; sourceTree = "<group>"; };
+		2264113B16F16C7800ABA4CB /* MultiDocWindowController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MultiDocWindowController.mm; sourceTree = "<group>"; };
+		2264113D16F16E7400ABA4CB /* MultiDocAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultiDocAppDelegate.h; sourceTree = "<group>"; };
+		2264113E16F16E7400ABA4CB /* MultiDocAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultiDocAppDelegate.m; sourceTree = "<group>"; };
+		2264114916F1757100ABA4CB /* MultiDocDocumentController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultiDocDocumentController.h; sourceTree = "<group>"; };
+		2264114A16F1757100ABA4CB /* MultiDocDocumentController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultiDocDocumentController.m; sourceTree = "<group>"; };
+		2264114C16F1798500ABA4CB /* DocumentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DocumentViewController.h; sourceTree = "<group>"; };
+		2264114D16F1798500ABA4CB /* DocumentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DocumentViewController.m; sourceTree = "<group>"; };
+		2264114F16F18A8600ABA4CB /* Window.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Window.xib; sourceTree = "<group>"; };
+		2264115116F18C4E00ABA4CB /* View.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = View.xib; sourceTree = "<group>"; };
+		2264115316F1966300ABA4CB /* MyView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MyView.xib; path = MultiDocTest/MyView.xib; sourceTree = "<group>"; };
+		2264115516F197AD00ABA4CB /* MasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MasterViewController.h; path = MultiDocTest/MasterViewController.h; sourceTree = "<group>"; };
+		2264115616F197AD00ABA4CB /* MasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MasterViewController.m; path = MultiDocTest/MasterViewController.m; sourceTree = "<group>"; };
+		2264115716F197AD00ABA4CB /* MasterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MasterViewController.xib; path = MultiDocTest/MasterViewController.xib; sourceTree = "<group>"; };
+		2264115A16F27BD100ABA4CB /* PSMTabBarControl.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PSMTabBarControl.xcodeproj; path = PSMTabBarControl/PSMTabBarControl.xcodeproj; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2264111416F16B8D00ABA4CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2264116416F27BE400ABA4CB /* PSMTabBarControl.framework in Frameworks */,
+				2264111B16F16B8D00ABA4CB /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2264110E16F16B8D00ABA4CB = {
+			isa = PBXGroup;
+			children = (
+				2264115A16F27BD100ABA4CB /* PSMTabBarControl.xcodeproj */,
+				2264115516F197AD00ABA4CB /* MasterViewController.h */,
+				2264115616F197AD00ABA4CB /* MasterViewController.m */,
+				2264115716F197AD00ABA4CB /* MasterViewController.xib */,
+				2264115316F1966300ABA4CB /* MyView.xib */,
+				2264112016F16B8D00ABA4CB /* MultiDocTest */,
+				2264111916F16B8D00ABA4CB /* Frameworks */,
+				2264111816F16B8D00ABA4CB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2264111816F16B8D00ABA4CB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2264111716F16B8D00ABA4CB /* MultiDocTest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2264111916F16B8D00ABA4CB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2264111A16F16B8D00ABA4CB /* Cocoa.framework */,
+				2264111C16F16B8D00ABA4CB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2264111C16F16B8D00ABA4CB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2264111D16F16B8D00ABA4CB /* AppKit.framework */,
+				2264111E16F16B8D00ABA4CB /* CoreData.framework */,
+				2264111F16F16B8D00ABA4CB /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		2264112016F16B8D00ABA4CB /* MultiDocTest */ = {
+			isa = PBXGroup;
+			children = (
+				2264113D16F16E7400ABA4CB /* MultiDocAppDelegate.h */,
+				2264113E16F16E7400ABA4CB /* MultiDocAppDelegate.m */,
+				2264113A16F16C7800ABA4CB /* MultiDocWindowController.h */,
+				2264113B16F16C7800ABA4CB /* MultiDocWindowController.mm */,
+				2264114916F1757100ABA4CB /* MultiDocDocumentController.h */,
+				2264114A16F1757100ABA4CB /* MultiDocDocumentController.m */,
+				2264114C16F1798500ABA4CB /* DocumentViewController.h */,
+				2264114D16F1798500ABA4CB /* DocumentViewController.m */,
+				2264112C16F16B8D00ABA4CB /* Document.h */,
+				2264112D16F16B8E00ABA4CB /* Document.m */,
+				2264113216F16B8E00ABA4CB /* MainMenu.xib */,
+				2264114F16F18A8600ABA4CB /* Window.xib */,
+				2264115116F18C4E00ABA4CB /* View.xib */,
+				2264112116F16B8D00ABA4CB /* Supporting Files */,
+			);
+			path = MultiDocTest;
+			sourceTree = "<group>";
+		};
+		2264112116F16B8D00ABA4CB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2264112216F16B8D00ABA4CB /* MultiDocTest-Info.plist */,
+				2264112316F16B8D00ABA4CB /* InfoPlist.strings */,
+				2264112616F16B8D00ABA4CB /* main.m */,
+				2264112816F16B8D00ABA4CB /* MultiDocTest-Prefix.pch */,
+				2264112916F16B8D00ABA4CB /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2264115B16F27BD100ABA4CB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2264116116F27BD200ABA4CB /* PSMTabBarControl.framework */,
+				2264116316F27BD200ABA4CB /* PSMTabBarControlDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2264111616F16B8D00ABA4CB /* MultiDocTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2264113716F16B8E00ABA4CB /* Build configuration list for PBXNativeTarget "MultiDocTest" */;
+			buildPhases = (
+				2264111316F16B8D00ABA4CB /* Sources */,
+				2264111416F16B8D00ABA4CB /* Frameworks */,
+				2264111516F16B8D00ABA4CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MultiDocTest;
+			productName = MultiDocTest;
+			productReference = 2264111716F16B8D00ABA4CB /* MultiDocTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2264110F16F16B8D00ABA4CB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Samuel Cartwright";
+			};
+			buildConfigurationList = 2264111216F16B8D00ABA4CB /* Build configuration list for PBXProject "MultiDocTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 2264110E16F16B8D00ABA4CB;
+			productRefGroup = 2264111816F16B8D00ABA4CB /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 2264115B16F27BD100ABA4CB /* Products */;
+					ProjectRef = 2264115A16F27BD100ABA4CB /* PSMTabBarControl.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				2264111616F16B8D00ABA4CB /* MultiDocTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		2264116116F27BD200ABA4CB /* PSMTabBarControl.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = PSMTabBarControl.framework;
+			remoteRef = 2264116016F27BD200ABA4CB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2264116316F27BD200ABA4CB /* PSMTabBarControlDemo.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = PSMTabBarControlDemo.app;
+			remoteRef = 2264116216F27BD200ABA4CB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2264111516F16B8D00ABA4CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2264112516F16B8D00ABA4CB /* InfoPlist.strings in Resources */,
+				2264112B16F16B8D00ABA4CB /* Credits.rtf in Resources */,
+				2264113416F16B8E00ABA4CB /* MainMenu.xib in Resources */,
+				2264115016F18A8600ABA4CB /* Window.xib in Resources */,
+				2264115216F18C4E00ABA4CB /* View.xib in Resources */,
+				2264115416F1966300ABA4CB /* MyView.xib in Resources */,
+				2264115916F197AE00ABA4CB /* MasterViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2264111316F16B8D00ABA4CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2264112716F16B8D00ABA4CB /* main.m in Sources */,
+				2264112E16F16B8E00ABA4CB /* Document.m in Sources */,
+				2264113C16F16C7800ABA4CB /* MultiDocWindowController.mm in Sources */,
+				2264113F16F16E7400ABA4CB /* MultiDocAppDelegate.m in Sources */,
+				2264114B16F1757100ABA4CB /* MultiDocDocumentController.m in Sources */,
+				2264114E16F1798500ABA4CB /* DocumentViewController.m in Sources */,
+				2264115816F197AE00ABA4CB /* MasterViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2264112316F16B8D00ABA4CB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2264112416F16B8D00ABA4CB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		2264112916F16B8D00ABA4CB /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2264112A16F16B8D00ABA4CB /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		2264113216F16B8E00ABA4CB /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2264113316F16B8E00ABA4CB /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2264113516F16B8E00ABA4CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		2264113616F16B8E00ABA4CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		2264113816F16B8E00ABA4CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MultiDocTest/MultiDocTest-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					./scite325/scintilla/include,
+					./scite325/scintilla/lexlib,
+					./scite325/scintilla/src,
+					./scite325/cocoa/,
+				);
+				INFOPLIST_FILE = "MultiDocTest/MultiDocTest-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		2264113916F16B8E00ABA4CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MultiDocTest/MultiDocTest-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					./scite325/scintilla/include,
+					./scite325/scintilla/lexlib,
+					./scite325/scintilla/src,
+					./scite325/cocoa/,
+				);
+				INFOPLIST_FILE = "MultiDocTest/MultiDocTest-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2264111216F16B8D00ABA4CB /* Build configuration list for PBXProject "MultiDocTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2264113516F16B8E00ABA4CB /* Debug */,
+				2264113616F16B8E00ABA4CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2264113716F16B8E00ABA4CB /* Build configuration list for PBXNativeTarget "MultiDocTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2264113816F16B8E00ABA4CB /* Debug */,
+				2264113916F16B8E00ABA4CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2264110F16F16B8D00ABA4CB /* Project object */;
+}
